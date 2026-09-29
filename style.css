@@ -1,0 +1,317 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url("images/wood-bg.png");
+    background-repeat: repeat-x;
+}
+
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+
+#tabs-tops{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+}
+
+#tabs-tops a{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+#main-home{
+    margin-top: 120px;
+}
+
+#main-home img{
+    width: 100%;
+}
+
+#tabs-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+}
+
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+#main{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+a.info-box{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+}
+
+.info-box img{
+    height: 70%;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    margin: 0;
+    margin-bottom: 0px;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p{
+    margin: 0;
+    margin-top: 0px;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box img.right{
+    float: right;
+    margin-right: 25px;
+    margin-top: 25px;
+    height: 40px;
+}
+
+#info-box-full{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+#info-box-full img{
+    width: 100%;
+}
+
+#info-box-full h3{
+    text-align: center;
+}
+
+/*========================BACK BUTTON==========================*/
+a.back-button{
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    background-color: #572800;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/*========================CLICKABLE MAP==========================*/
+#map-wrap{
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+
+#map-wrap img{
+    width: 100%;
+    display: block;
+}
+
+a.map-hotspot{
+    position: absolute;
+    display: block;
+    border-radius: 4px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+a.map-hotspot:hover,
+a.map-hotspot:focus{
+    background-color: rgba(255, 255, 255, 0.35);
+    outline: 2px solid #572800;
+}
+
+/*========================WEATHER==========================*/
+img.info-box-weather-icon{
+    height: 30px;
+    width: 30px !important;
+    margin: 10px;
+    float: left;
+}
+
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom: 1px solid #131313;
+}
+
+/*========================MENU (COFFEE SHOP)==========================*/
+.menu-box{
+    margin-top: 20px;
+    border-top: 2px solid #572800;
+    padding-top: 10px;
+}
+
+.menu-box h4{
+    text-align: center;
+    color: #572800;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.menu-box h5{
+    color: #572800;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #572800;
+    padding-bottom: 3px;
+}
+
+.menu-columns{
+    overflow: hidden;
+}
+
+.menu-column{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+
+.menu-column ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-column li{
+    overflow: hidden;
+    padding: 4px 0;
+    border-bottom: 1px dotted #999;
+    color: #131313;
+    font-size: 14px;
+}
+
+.menu-column li span{
+    float: right;
+    font-weight: 700;
+    color: #572800;
+}
+
+.no-alcohol{
+    clear: both;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(87, 40, 0, 0.1);
+    border: 1px solid #572800;
+    text-align: center;
+}
+
+.no-alcohol strong{
+    color: #572800;
+}
+
+.no-alcohol p{
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #131313;
+}
+
+/*========================FEEDBACK FORM==========================*/
+#info-box-full input,
+#info-box-full textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #572800;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#info-box-full textarea{
+    height: 120px;
+}
+
+a.button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 12px 0;
+    background-color: darkgreen;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a.button:hover{
+    background-color: forestgreen;
+}
